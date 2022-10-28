@@ -1,6 +1,6 @@
 # PROJECT: Blog Server
 
-In this project, you will create a backend of a blog application.
+In this project, you will create a backend of a blog application, utilizing Model View Controller architecture.
 
 # Technologies:
 
@@ -12,7 +12,12 @@ In this project, you will create a backend of a blog application.
 
 ## Create your project
 
-Utilize `npm init -y` to create your project. Install your `express`, `nodemon`, and `dotenv` dependencies. Create your `app.js` file which will contain your entry points.
+Utilize `npm init -y` to create your project.
+
+Install your `express`, `nodemon`, and `dotenv` dependencies.
+
+Create your `app.js` file which will contain your entry points. I already created a `.gitignore` for your convenience and filled it with node modules and your environment variable.
+
 Create an `api` folder which will hold `blog.json` file. The file should contain the following data schematic:
 
 ```json
@@ -25,7 +30,7 @@ Create an `api` folder which will hold `blog.json` file. The file should contain
     }
 ]
 ```
-Create `controllers` folder which will store your `routes.js` file. This is where you will create all of your endpoints to handle full CRUD functionality.
+Create a `controllers` folder which will store your `routes.js` file. This is where you will create all of your endpoints to handle full CRUD functionality.
 
 ## System Design
 
@@ -55,5 +60,3 @@ Make sure that your completed design sends a response back to the client with ap
 - [ ] Existing setup requires us to keep track of the `post_id`. In your entry creation route, create a feature that will check where your makeshift db is in terms of its id's and creates a new one for each entry. Don't overthink it. A simple counter-style 1, 2, 3 is sufficient.
 
 - [ ] If you're feeling extra confident, create static files that will serve up the content to the user using DOM and fetch to retrieve the data from the server. These files are then served by ALL blog posts endpoint as well as ONE blog post endpoint.
-
-
